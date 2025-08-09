@@ -1,106 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Aman Nandha - Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: linear-gradient(to right, #2c3e50, #3498db);
-      color: white;
-      text-align: center;
-    }
-    header {
-      padding: 50px 20px;
-    }
-    header img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid white;
-    }
-    header h1 {
-      font-size: 2.5em;
-      margin: 10px 0 5px;
-    }
-    header p {
-      font-size: 1.2em;
-      color: #ecf0f1;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    h2 {
-      border-bottom: 2px solid white;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-    .social-links a {
-      display: inline-block;
-      margin: 10px;
-      color: white;
-      font-size: 20px;
-      text-decoration: none;
-      border: 1px solid white;
-      padding: 8px 15px;
-      border-radius: 5px;
-      transition: 0.3s;
-    }
-    .social-links a:hover {
-      background: white;
-      color: black;
-    }
-    footer {
-      background: rgba(0, 0, 0, 0.3);
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="images/aman-photo.jpg" alt="Aman Nandha">
-    <h1>Aman Nandha</h1>
-    <p>Content Artist | Reel Creator | Photographer</p>
-  </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>
-      Hi, I’m Aman — a passionate content creator from Rajkot. I create reels, design visuals,
-      and capture moments that tell unique stories.
-    </p>
-  </section>
-
-  <section>
-    <h2>Portfolio</h2>
-    <p>Here are some of my works and projects:</p>
-    <ul style="list-style:none; padding:0;">
-      <li>🎥 Trending Instagram Reels</li>
-      <li>📸 Professional Photography</li>
-      <li>🎨 Graphic Design & Edits</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="social-links">
-      <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
-      <a href="mailto:youremail@example.com">Email</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aman Nandha - Content Artist</title>
+    <meta
+      name="description"
+      content="Digital Visiting Card of Aman Nandha - Reel Creator & Content Artist from Rajkot."
+    />
+    <link
+      rel="icon"
+      href="images\aman photo.jpg"
+      type="image/jpg"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background: #1a0033;
+        color: white;
+      }
+      .card {
+        background: #2a004d;
+        border-radius: 1.25rem;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        border: 1px solid #ff4d94;
+      }
+      .btn {
+        background-color: #ff4d94;
+        padding: 0.5rem 1rem;
+        border-radius: 9999px;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: 0.3s;
+      }
+      .btn:hover {
+        background-color: white;
+        color: #ff4d94;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen flex flex-col items-center px-4 pt-6 pb-10">
+    <!-- Profile Image and Info -->
+    <div
+      class="w-full max-w-sm rounded-2xl overflow-hidden shadow-lg mb-6 relative"
+    >
+      <img
+        src="images\aman photo.jpg"
+        alt="Aman Nandha"
+        class="w-full h-96 object-cover"
+      />
+      <div class="absolute bottom-4 left-5 text-white">
+        <h1 class="text-2xl font-bold drop-shadow-md">Aman Nandha</h1>
+        <p class="text-sm drop-shadow-md">
+          Reel Creator | Content Artist | Visual Storyteller
+        </p>
+      </div>
     </div>
-  </section>
 
-  <footer>
-    &copy; 2025 Aman Nandha. All Rights Reserved.
-  </footer>
+    <!-- About Me -->
+    <div class="card w-full max-w-sm">
+      <h2 class="text-xl font-semibold mb-2">About Me</h2>
+      <p>
+        Hi, I'm Aman — a passionate content artist creating high-impact Reels,
+        Shorts, and behind-the-scenes stories that resonate. Based in Rajkot.
+      </p>
+    </div>
 
-</body>
+    <!-- Events Covered -->
+    <div class="card w-full max-w-sm">
+      <h2 class="text-xl font-semibold mb-2">What I Cover</h2>
+      <ul class="list-disc pl-5 space-y-1 text-sm text-gray-200">
+        <li>Weddings</li>
+        <li>Corporate & Brand Events</li>
+        <li>Festivals, Fests & Cultural Shows</li>
+        <li>Religious Functions</li>
+        <li>Travel Vlogs & BTS Content</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="card w-full max-w-sm">
+      <h2 class="text-xl font-semibold mb-2">Let's Connect</h2>
+      <p>
+        <strong>Call:</strong>
+        <a href="tel:+917202089638" class="underline">+91 7202089638</a>
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:amannandhait7@gmail.com" class="underline"
+          >amannandhait7@gmail.com</a
+        >
+      </p>
+      <a
+  class="btn mt-3"
+  href="https://wa.me/917202089638?text=Hello%20Aman,%20I%20would%20like%20to%20collaborate%20on%20a%20project!"
+  target="_blank"
+>
+  <span class="material-icons">chat</span> WhatsApp
+</a>
+
+    </div>
+
+    <!-- Genz Foodiis -->
+    <div class="card w-full max-w-sm"><h1><b>Elite Digital</b></h1> </h2>
+      <p>
+        Have a brand or project that needs a content boost? Let's create magic
+        together.
+      </p>
+      <a
+        class="btn mt-3"
+        href="https://docs.google.com/forms/d/e/1FAIpQLScNkk8m5V3nC1jDS6DOrzVsSwm2Zqoz6JKX59ubHoEm4UWvHg/viewform?usp=header"
+        target="_blank"
+      >
+        <span class="material-icons">event</span> Book Consultation
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <p class="text-center text-sm mt-6 text-gray-300">
+      Powered by
+      <a
+        href="https://devauradigital.com"
+        target="_blank"
+        class="text-pink-400 font-semibold"
+        >DevAura Digital</a
+      >
+    </p>
+
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </body>
 </html>
